@@ -7,6 +7,14 @@
 //$link-color: #000000;
 //.page {text-align: center;}
 
+.side-bar a:hover {
+border-radius: 25px;
+background: grey;
+padding: 20px;
+width: 100%;
+height: 100%;
+}
+
 // allow line breaks for links
 .page a {
 white-space: normal !important;
