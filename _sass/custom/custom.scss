@@ -8,10 +8,12 @@
 //.page {text-align: center;}
 
 .navigation-list-link{
+color: black;
 padding-left: 20px;
 }
 
 .navigation-list-link:hover{
+color: black;
 border-radius: 25px;
 background: grey;
 padding-left: 20px;
@@ -19,6 +21,14 @@ width: 100%;
 height: 100%;
 }
 
+.navigation-list-link.active{
+color: #7253ed;
+border-radius: 25px;
+background: blue;
+padding-left: 20px;
+width: 100%;
+height: 100%;
+}
 
 
 
