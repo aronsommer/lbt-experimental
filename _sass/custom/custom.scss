@@ -32,6 +32,10 @@ width: 100%;
 height: 100%;
 }
 
+.navigation-list-item::before {
+display: none;
+}
+
 // allow line breaks for links
 .page a {
 white-space: normal !important;
