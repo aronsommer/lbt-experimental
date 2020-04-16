@@ -1,0 +1,27 @@
+title: Lea Bosshart Text
+description: Suchen Sie einen Texter in der Schweiz? Ich bin eine Freie Texterin aus Basel und biete professionelle & stilsichere Texte in Schweizer Qualität.
+author: Lea Bosshart
+
+# remote_theme: pmarsceill/just-the-docs
+remote_theme: leabosshart/just-the-docs
+color_scheme: nil
+search_enabled: false
+
+# Aux links for the upper right navigation
+# aux_links:
+#  "LinkedIn":
+#    - "https://www.linkedin.com/in/lea-bosshart-454a6842/"
+
+# Footer content appears at the bottom of every page's main content
+footer_content: "Copyright &copy; 2020 Lea Bosshart"
+
+# Set a path/url to a logo that will be displayed instead of the title
+# logo: "/images/oktopus.png"
+
+# Heading anchor links appear on hover over h1-h6 tags in page content
+# allowing users to deep link to a particular heading on a page.
+# Supports true (default) or false/nil
+heading_anchors: false
+
+# Google Analytics Tracking (optional)
+ga_tracking: UA-163294258-1

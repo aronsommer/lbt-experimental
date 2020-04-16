@@ -1,0 +1,49 @@
+<!-- This is a HTML comment -->
+<!-- You will not be able to see this text. -->
+
+<!-- This is an image with lazy loading -->
+<img src="images/works1/swmb-hut-3.jpg" loading="lazy" alt="" width="768" height="545">
+
+<!-- This is an image with eager loading -->
+<img src="images/works1/swmb-hut-3.jpg" loading="eager" alt="" width="768" height="545">
+
+<!-- This is an image in markdown syntax -->
+![Alt text](images/oktopus-275x300.jpg)
+
+<!-- You will not see this image because its commented out -->
+<!-- ![Alt text](images/oktopus-275x300.jpg) -->
+
+<!-- This is a line break -->
+<br>
+
+<!-- This are two line breaks -->
+<br><br>
+
+# Heading 1 (Angebot, Über mich, Gross ganz oben)
+
+## Heading 2 (CV, Weiterbildungen und Interessen, Unterkategorie)
+
+### Heading 3 (bis jetzt nicht gebraucht)
+
+Ich bin ein Abschnitt mit grösserer Schrift aber kein achtarmiger, stifteschwingender Oktopus, schreibe aber genauso flink und punktgenau. Ob Texte für Werbung, redaktionelle Texte, Übersetzungen, Korrekturen oder Lektorat: Kontaktieren Sie mich für eine unverbindliche Offerte.
+{: .fs-6 .fw-300 }
+
+Wenn das unten drann ist wird der Text gross.
+{: .fs-6 .fw-300 }
+
+Ich bin ein ganz normaler Lauftext. Bla bla bla.
+
+- Das ist eine Aufzählung
+- Mit Bulletpoints
+- Verstehst du?
+
+<!-- Das ist ein link in markdown syntax -->
+<!-- dieser wird in einem neuen fenster geöffnet wegen target blank -->
+[sirografik.ch](https://sirografik.ch){:target="_blank"}
+
+<!-- Das ist ein link in HTML syntax -->
+<!-- dieser wird auch in einem neuen fenster geöffnet wegen target blank -->
+<a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>
+
+Hier kannst du auch mal schauen und lernen wie es funktioniert:
+https://pmarsceill.github.io/just-the-docs/
