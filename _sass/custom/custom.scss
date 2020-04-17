@@ -7,14 +7,14 @@ $nav-child-link-color: #000000;
 //$link-color: #000000;
 //.page {text-align: center;}
 
-// navigations links //
+//// navigation links ////
 
-.navigation-list-link{
+.navigation-list-link {
 color: black;
 padding-left: 20px;
 }
 
-.navigation-list-link:hover{
+.navigation-list-link:hover {
 color: black;
 border-radius: 25px;
 background: #CDCDCD;
@@ -23,7 +23,7 @@ width: 100%;
 height: 100%;
 }
 
-.navigation-list-link.active{
+.navigation-list-link.active {
 color: white !important;
 border-radius: 25px;
 background: #7253ed;
@@ -32,6 +32,7 @@ width: 100%;
 height: 100%;
 }
 
+// hide small line before child links
 .navigation-list-item::before {
 display: none;
 }
