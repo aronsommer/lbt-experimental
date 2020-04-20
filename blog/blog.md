@@ -10,19 +10,6 @@ has_toc: false
 Hier ist mein Blog :)
 {: .fs-6 .fw-300 }
 
-Hier werden Links zu meinen Posts angezeigt:
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <!-- <a href="{{ post.url }}">{{ post.title }}</a> -->
-      <a href="/lbt-experimental{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-Hier werden alle Posts vollständig angezeigt:
-
 {% for post in site.posts %}
   <article>
     <h2>
