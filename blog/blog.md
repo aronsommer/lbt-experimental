@@ -13,7 +13,8 @@ Hier ist mein Blog :)
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <!-- <a href="{{ post.url }}">{{ post.title }}</a> -->
+      <a href="/lbt-experimental{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
@@ -23,7 +24,8 @@ Hier ist mein Blog :)
 {% for post in site.posts %}
   <article>
     <h2>
-      <a href="{{ post.url }}">
+      <!-- <a href="{{ post.url }}"> -->
+      <a href="/lbt-experimental{{ post.url }}">
         {{ post.title }}
       </a>
     </h2>
