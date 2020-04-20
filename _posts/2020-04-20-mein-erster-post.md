@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "Mein erster Post"
-parent: Blog
-has_children: false
 ---
 
 {% include post-header.html %}
