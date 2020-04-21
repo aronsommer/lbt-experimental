@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cd "$(dirname "$BASH_SOURCE")" || {
+    echo "Error getting script directory" >&2
+    exit 1
+}
+
+echo '---
+layout: post
+title:  "Title of post"
+---
+
+{% include post-header.html %}
+
+# Header of post
+
+Post text bla bla bla.' >`date +%Y-%m-%d`.md
