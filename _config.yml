@@ -8,9 +8,9 @@ color_scheme: nil
 search_enabled: false
 
 # Aux links for the upper right navigation
-# aux_links:
-#  "LinkedIn":
-#    - "https://www.linkedin.com/in/lea-bosshart-454a6842/"
+aux_links:
+  '<button id="theme-toggle"></button>':
+    - '#"onclick="modeSwitcher()"'
 
 # Footer content appears at the bottom of every page's main content
 footer_content: "Copyright &copy; 2020 Lea Bosshart"

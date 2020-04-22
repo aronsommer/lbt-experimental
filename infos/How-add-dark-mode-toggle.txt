@@ -1,0 +1,57 @@
+https://medium.com/@derekkedziora/how-to-add-a-dark-mode-toggle-to-a-jekyll-site-a76dac00128d
+
+/// The CSS
+
+html, html[data-theme="light"], {
+  --light-text-color: hsl(0, 0%, 35%);
+  --main-background-color: hsl(0, 5%, 95%);
+  --main-text-color: hsl(0, 0%, 0%);
+}
+
+html[data-theme="dark"] {
+  --light-text-color: hsl(0, 0%, 60%);
+  --main-background-color: hsl(0, 0%, 10%);
+  --main-text-color: hsl(0, 10%, 80%);
+}
+
+/// The button
+
+<button id="theme-toggle" onclick="modeSwitcher()"></button>
+
+/// The JavaScript at the very top of the page
+
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	}
+
+/// The JavaScript at the end of each page
+
+const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
+
+if (theme === "dark") {
+	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+} else if (theme === "light") {
+	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+} else if  (userPrefers === "dark") {
+	document.documentElement.setAttribute('data-theme', 'dark');
+	window.localStorage.setItem('theme', 'dark');
+	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+} else {
+	document.documentElement.setAttribute('data-theme', 'light');
+	window.localStorage.setItem('theme', 'light');
+	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+}
+
+function modeSwitcher() {
+	let currentMode = document.documentElement.getAttribute('data-theme');
+	if (currentMode === "dark") {
+		document.documentElement.setAttribute('data-theme', 'light');
+		window.localStorage.setItem('theme', 'light');
+		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+	} else {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		window.localStorage.setItem('theme', 'dark');
+		document.getElementById("theme-toggle").innerHTML = "Light Mode";
+	}
+}

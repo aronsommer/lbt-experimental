@@ -42,6 +42,27 @@ display: none;
 white-space: normal !important;
 }
 
+//// Dark mode ////
+
+html[data-theme="dark"] {
+$sidebar-color: black;
+.page {background-color: black;}
+.side-bar {background-color: black;}
+.main-content-wrap {background-color: black;}
+.page-header {background-color: black;}
+.side-bar a {color: #E4E6EB;}
+.page {color: #E4E6EB;}
+h1, h2, h3, h4, h5, h6 {color: #E4E6EB !important;}
+.navigation-list-link {color: #E4E6EB;}
+.navigation-list-link:hover {background: #3A3B3C;}
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+      content: "dark";
+    }
+}
+
 ////
 //// Typography
 ////
